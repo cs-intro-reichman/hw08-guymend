@@ -55,7 +55,6 @@ public class PlayListMethodTester {
         playList.add(new Track("Imagine", "John Lennon", 187));
     
         playList.removeLast(); // Should remove "Imagine"
-    
         if (playList.getSize() == 1 && playList.indexOf("Imagine") == -1) {
             System.out.println("testRemoveLast: PASS");
         } else {
@@ -97,7 +96,7 @@ public class PlayListMethodTester {
         playList.add(new Track("Fernando", "ABBA", 354)); // Initial add to ensure the list isn't empty
 
         boolean result = playList.add(0, new Track("Yesterday", "The Beatles", 125)); // Add at the beginning
-        
+
         if (result && "Yesterday".equals(playList.getTrack(0).getTitle())) {
             System.out.println("testAddAtIndex: PASS");
         } else {
@@ -112,7 +111,6 @@ public class PlayListMethodTester {
         playList.add(new Track("Creep", "Radiohead", 369)); // Added to be removed
 
         playList.remove(2); // Remove "Creep"
-
         if (playList.getSize() == 2 && playList.indexOf("Creep") == -1) {
             System.out.println("testRemoveAtIndex: PASS");
         } else {
