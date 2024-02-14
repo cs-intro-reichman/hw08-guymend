@@ -41,7 +41,6 @@ class PlayList {
      *  If the list is full, does nothing and returns false.
      *  Otherwise, appends the track and returns true. */
     public boolean add(Track track) {
-        System.out.println(track);
         for (int i = 0; i < tracks.length; i++) {
             if (tracks[i] == null) {
                 tracks[i] = track;
