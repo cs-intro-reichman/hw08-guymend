@@ -19,6 +19,7 @@ class PlayList {
     
     /** Returns the current number of tracks in this play list. */ 
     public int getSize() {
+        size = 0;
         for (int i = 0; i < tracks.length; i++) {
             if (tracks[i] != null) {
                 size++;
@@ -40,7 +41,7 @@ class PlayList {
      *  If the list is full, does nothing and returns false.
      *  Otherwise, appends the track and returns true. */
     public boolean add(Track track) {
-        //// replace the following statement with your 
+        System.out.println(track);
         for (int i = 0; i < tracks.length; i++) {
             if (tracks[i] == null) {
                 tracks[i] = track;
