@@ -19,6 +19,11 @@ class PlayList {
     
     /** Returns the current number of tracks in this play list. */ 
     public int getSize() {
+        for (int i = 0; i < tracks.length; i++) {
+            if(tracks[i] != null){
+                size++;
+            }
+        }
         return size;
     }
 
